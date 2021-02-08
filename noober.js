@@ -84,7 +84,6 @@ let NooberPurple = document.querySelector('#noober-purple-filter')
   NooberPurple.addEventListener('click', async function(event){  
   event.preventDefault()
   document.querySelector(`.rides`).innerHTML = ""
-  //let output = document.querySelector('.rides')
   let response = await fetch(`https://kiei451.com/api/rides.json`)
   let json = await response.json()
   let newArray = []
@@ -101,7 +100,6 @@ let NooberXL = document.querySelector('#noober-xl-filter')
   NooberXL.addEventListener('click', async function(event){  
   event.preventDefault()
   document.querySelector(`.rides`).innerHTML = ""
-  //let output = document.querySelector('.rides')
   let response = await fetch(`https://kiei451.com/api/rides.json`)
   let json = await response.json()
   let newArray = []
@@ -112,14 +110,12 @@ let NooberXL = document.querySelector('#noober-xl-filter')
   }
 }
 renderRides(newArray)  
-  
 })
 
 let NooberX = document.querySelector('#noober-x-filter')
   NooberX.addEventListener('click', async function(event){  
   event.preventDefault()
   document.querySelector(`.rides`).innerHTML = ""
-  //let output = document.querySelector('.rides')
   let response = await fetch(`https://kiei451.com/api/rides.json`)
   let json = await response.json()
   let newArray = []
@@ -136,7 +132,6 @@ renderRides(newArray)
   NooberP.addEventListener('click', async function(event){  
   event.preventDefault()
   document.querySelector(`.rides`).innerHTML = ""
-  //let output = document.querySelector('.rides')
   let response = await fetch(`https://kiei451.com/api/rides.json`)
   let json = await response.json()
   let newArray = []
@@ -148,11 +143,4 @@ renderRides(newArray)
 }
 renderRides(newArray)  
   })
-
-
-
-
-
-
-
 })
